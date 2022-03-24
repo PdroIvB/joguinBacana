@@ -29,11 +29,16 @@
 // }
 
 const aquariumPosition = $("#local-aquarium").position();
+console.log(aquariumPosition, $("#local-aquarium").offset())
 const rationPosition = $("#local-ration").position();
 const ballsPosition = $("#local-balls").position();
 const bowlPosition = $("#local-bowl").position();
 const catFoodPosition = $("#local-catFood").position();
 const certificatePosition = $("#local-certificate").position();
+
+const imgRef2 = $('#imgRef2').offset();
+console.log(imgRef2);
+$(`#aquarium`).css({left:imgRef2.left, top:imgRef2.top});
 
 $(".item").draggable({
   containment: "body",
@@ -67,7 +72,7 @@ $(".local-img").droppable({
   },
 });
 
-function startTimer(duration, display) {
+/* function startTimer(duration, display) {
   let timer = duration;
   let interval = setInterval(function () {
     minutes = parseInt(timer / 60, 10);
@@ -130,3 +135,4 @@ window.onload = function () {
   display = document.getElementById("timer");
   startTimer(duration, display);
 };
+ */
