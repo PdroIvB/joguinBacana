@@ -6,7 +6,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
 
-  background-image: url('/front-end/jogao/Assets/primeira_fase/background.png');
+  background-image: url('/front-end/jogao/Assets/primeira_fase/blue-cartoon-background.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -14,10 +14,16 @@ body {
   margin: 0;
 }
 
-#drag-img {  
- 
-  background: #167737;
-  border: solid #896217 5px;
+#drag-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #1677;
+  border: solid #8962 5px;
+  border-radius: 15px;
+  width: 442px;
+  height: 100px;
 }
 
 .container {
@@ -54,7 +60,7 @@ body {
 }
 
 #primImg {
-  border: 5px solid white;
+  border: solid #8962 5px;
   position: relative;
 }
 
@@ -66,7 +72,7 @@ body {
 
 #secImg {
   position: relative;
-  border: 5px solid white;
+  border: solid #8962 5px;
 }
 
 #imgRef2 {
@@ -86,7 +92,7 @@ body {
 
 .local-img {
   position: absolute;
-  border: red solid 1px;
+  /* border: red solid 1px; */
   width: 10%;
   height: 10%;
 }
@@ -114,10 +120,10 @@ body {
   width: 7%;
 }
 #local-catFood {
-  top: 36%;
+  top: 34%;
   left: 27%;
-  width: 5%;
-  height: 5%;
+  width: 4%;
+  height: 4%;
 }
 #local-certificate {
   top: 33%;
@@ -161,6 +167,12 @@ body {
 }
 #certificate {
   width: 51px;
+}
+
+.ordem{
+  display: flex;
+  flex-direction: row;
+
 }
 
 /* #local-ration {

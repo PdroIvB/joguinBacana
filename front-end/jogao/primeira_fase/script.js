@@ -28,16 +28,12 @@
 //     });
 // }
 
-const aquariumPosition = $("#local-aquarium").position();
-//console.log(aquariumPosition, $("#local-aquarium").offset())
-const rationPosition = $("#local-ration").position();
-const ballsPosition = $("#local-balls").position();
-const bowlPosition = $("#local-bowl").position();
-const catFoodPosition = $("#local-catFood").position();
-const certificatePosition = $("#local-certificate").position();
+class punctuation {
+  constructor(){
 
-const imgRef2 = $('#imgRef2').offset();
-//console.log(imgRef2);
+  }
+}
+
 
 $(".item").draggable({
   containment: "body",
@@ -51,20 +47,25 @@ $('body').droppable({
   }
 })
 
+let score = 0;
+
 $(".local-img").droppable({
   drop: function (event, ui) {
-    console.log("drop");
+    
     const localImg = $(this).attr("type-obj");
     const typeObj = ui.draggable.attr("type-obj");
-    console.log(localImg,typeObj)
-    const position = $(this).position();    
+    
+      
     if (typeObj === localImg) {
       console.log("acertou");
-      //$(`#${localImg}`).css({"left":"0", "top":"0"});
-      $(`#${typeObj}`).css({left:"307px",top:"-74px"});
-      //$(`#${typeObj}`).attr("type-obj","false");
-      //$(this).position() = ui.draggable.position();
+     
+      $(`#${typeObj}`).css("margin","0");
+      $(this).append($(`#${typeObj}`));
+      score++;
+     
     } 
+    testScore(score);
+
 
     //$("#score").html(score);
     ui.draggable.attr("inside", 1);
@@ -81,9 +82,15 @@ $(".local-img").droppable({
   },
 });
 
+function testScore(_score){
+  const score = _score;
+  if(score >= 6 ){
+    window.location = "/front-end/jogao/tela_inicial/index.html"
 
+}
+}
 
-/* function startTimer(duration, display) {
+function startTimer(duration, display) {
   let timer = duration;
   let interval = setInterval(function () {
     minutes = parseInt(timer / 60, 10);
@@ -98,7 +105,7 @@ $(".local-img").droppable({
   }, 1000);
 }
 function animatedTimer(timer, duration) {
-  console.log(timer);
+  //console.log(timer);
   if (timer == duration - (duration / 10) * 1) {
     document
       .getElementById("t10")
@@ -146,4 +153,3 @@ window.onload = function () {
   display = document.getElementById("timer");
   startTimer(duration, display);
 };
- */
