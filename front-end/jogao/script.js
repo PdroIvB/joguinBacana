@@ -29,7 +29,11 @@
 // }
 
 const aquariumPosition = $("#local-aquarium").position();
-console.log(aquariumPosition);
+const rationPosition = $("#local-ration").position();
+const ballsPosition = $("#local-balls").position();
+const bowlPosition = $("#local-bowl").position();
+const catFoodPosition = $("#local-catFood").position();
+const certificatePosition = $("#local-certificate").position();
 
 $(".item").draggable({
   containment: "body",
@@ -39,14 +43,14 @@ $(".local-img").droppable({
   drop: function (event, ui) {
     console.log("drop");
     const localImg = $(this).attr("type-obj");
-
     const typeObj = ui.draggable.attr("type-obj");
+    const position = $(this).position();    
     if (typeObj === localImg) {
-      console.log("accertou");
-      $(`#${localImg}`).css({ left: "219px", top: "-83px" });
-      /*  console.log($(`#${localImg}`).css("top"))    
-          console.log($(`#${localImg}`).css("left")) */
+      console.log("acertou");
+      $(this).position() = ui.draggable.position()
+      $(`#${localImg}`).css({left:position.left, top:position.top});
     } else {
+      
     }
 
     //$("#score").html(score);
