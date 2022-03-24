@@ -43,3 +43,48 @@ window.onload = function () {
     display = document.getElementById('timer');
     startTimer(duration, display); 
 };
+
+const dragImg = document.querySelector('.dragImg');
+const imgDrop = document.querySelectorAll('.dropImg');
+
+// dragImg listeners
+dragImg.addEventListener('dragstart', dragStart);
+dragImg.addEventListener('dragend', dragEnd);
+
+// Loop through dropImg boxes and add listeners
+for (const dropImg of imgDrop) {
+  dropImg.addEventListener('dragover', dragOver);
+  dropImg.addEventListener('dragenter', dragEnter);
+  dropImg.addEventListener('dragleave', dragLeave);
+  dropImg.addEventListener('drop', dragDrop);
+}
+
+// Drag Functions
+
+function dragStart() {
+  this.className += ' hold';
+  setTimeout(() => (this.className = 'invisible'), 0);
+}
+
+function dragEnd() {
+  this.className = 'dragImg';
+  console.log("acertou")
+}
+
+function dragOver(e) {
+  e.preventDefault();
+}
+
+function dragEnter(e) {
+  e.preventDefault();
+//   this.className += ' hovered';
+}
+
+function dragLeave() {
+  this.className = 'dropImg';
+}
+
+function dragDrop() {
+  this.className = 'dropImg';
+  this.append(dragImg);
+}

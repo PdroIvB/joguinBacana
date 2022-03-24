@@ -1,11 +1,57 @@
+@font-face {
+    font-family: 'Bocah';
+    src: url('bocah_2/Bocah.otf') format('opentype'), url('bocah_2/Bocah.ttf') format('truetype');
+  }
+
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-image: url(Group\ 6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+.btn-1{
+    
+    width:185px;
+    height:45px;
+    background-color: #89C1FE;
+    border-radius: 20px; 
+    font-size: 25px;
+    margin-top: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+} 
+
+.btn-2 {
+    width:185px;
+    height:45px;
+    background-color: #89C1FE;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
+
+.btn-3 {
+    width:185px;
+    height:45px;
+    background-color: #89C1FE;
+    border-radius: 20px; 
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+#img_start{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+}
 .container{
     border: 2px solid black;
     display: flex;
@@ -59,3 +105,37 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+.dragImg {
+    background-image: url('aquario\ 2.png');
+    background-repeat: no-repeat, repeat;
+    background-image: url('racao.png');
+    background-position: center;    
+    position: relative;
+    height: 100px;
+    width: 115px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    
+  }
+
+  .hold {
+    border: solid 5px #ccc;
+  }
+  
+  .dropImg {
+    display: inline-block;
+    height: 160px;
+    width: 160px; 
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    /* border: solid 3px salmon;  
+     background: white;   */
+  }
+
+ /* .hovered {
+    background: #f4f4f4;
+    border-style: dashed;
+  }    */
