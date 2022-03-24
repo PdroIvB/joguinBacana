@@ -1,32 +1,67 @@
-$("#botao").click(helloWorld);
-$("#botao1").click(bla);
+// $("#botao").click(helloWorld);
+// $("#botao1").click(bla);
 
-function helloWorld() {
-  fetch("http://localhost:3000/helloworld")
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (response) {
-      alert(response.message);
-    });
-}
+// function helloWorld() {
+//   fetch("http://localhost:3000/helloworld")
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (response) {
+//       alert(response.message);
+//     });
+// }
 
-function bla() {
-  console.log("ok");
-  const objASerStrigifado = { data: { bla: "blabla" } };
-  const objetoNovo = {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(objASerStrigifado),
-  };
-  fetch("http://localhost:3000/save-score", objetoNovo)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (response) {
-      alert(response.status);
-    });
-}
+// function bla() {
+//   console.log("ok");
+//   const objASerStrigifado = { data: { bla: "blabla" } };
+//   const objetoNovo = {
+//     method: "POST",
+//     headers: { "Content-Type": "application/json" },
+//     body: JSON.stringify(objASerStrigifado),
+//   };
+//   fetch("http://localhost:3000/save-score", objetoNovo)
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (response) {
+//       alert(response.status);
+//     });
+// }
+
+const aquariumPosition = $("#local-aquarium").position();
+console.log(aquariumPosition);
+
+$(".item").draggable({
+  containment: "body",
+});
+
+$(".local-img").droppable({
+  drop: function (event, ui) {
+    console.log("drop");
+    const localImg = $(this).attr("type-obj");
+
+    const typeObj = ui.draggable.attr("type-obj");
+    if (typeObj === localImg) {
+      console.log("accertou");
+      $(`#${localImg}`).css({ left: "219px", top: "-83px" });
+      /*  console.log($(`#${localImg}`).css("top"))    
+          console.log($(`#${localImg}`).css("left")) */
+    } else {
+    }
+
+    //$("#score").html(score);
+    ui.draggable.attr("inside", 1);
+  },
+  over: function (event, ui) {
+    if (Number(ui.draggable.attr("inside"))) {
+      //score -= Number(ui.draggable.attr("value"));
+      //$("#score").html(score);
+    }
+  },
+  out: function (event, ui) {
+    //ui.draggable.attr("inside",0)
+  },
+});
 
 function startTimer(duration, display) {
   let timer = duration;
