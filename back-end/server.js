@@ -29,7 +29,6 @@ app.post("/save-score", (req, res) => {
       res.send({ status: "Tudo certo" });
     }
   });
-  //FIXME qqr coisa
 });
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
