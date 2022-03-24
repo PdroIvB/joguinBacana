@@ -1,61 +1,113 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  overflow-x: hidden;
+
+  background-image: linear-gradient(#a5fee9, #f4eeb5);
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-.container{
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.container {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.time{
-    background-color: #0000ffbe;
-    height: 1em;
-    width: 3em;
-    border: solid black 1px;
+.time {
+  background-color: #0000ffbe;
+  height: 1em;
+  width: 3em;
+  border: solid black 1px;
 }
-#animated-timer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+#animated-timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-#timer{
-    font-size: x-large;
+#timer {
+  font-size: x-large;
 }
-#t10{
-    border-top-right-radius: 2em;
-    border-bottom-right-radius: 2em;
+#t10 {
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
 }
-#t1{
-    border-top-left-radius: 2em;
-    border-bottom-left-radius: 2em;
-}
-
-#primImg{
-    border: 2px solid green;
+#t1 {
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
 }
 
-#imgRef{
-    height: 30vh;
+#primImg {
+  border: 2px solid green;
+  position: relative;
 }
 
-#secImg{
-    background-image: url(./Assets/images/imgFalse.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
-    width: 80vw;
-    height: 30vh;
-    border: 3px solid red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#imgRef {
+  height: 30vh;
+  display: block;
+  max-width: 100vw;
+}
+
+#testBox {
+  position: absolute;
+  top: 64%;
+  left: 28%;
+  border: red solid 1px;
+  width: 10%;
+  height: 10%;
+}
+
+#secImg {
+  background-image: url(./Assets/petStore/fundos/imgFalse.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 80vw;
+  height: 30vh;
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.item {
+  margin: 1rem;
+}
+
+#aquarium {
+  width: 3.2rem;
+}
+
+#local-ration {
+  position: absolute;
+  top: 90%;
+  left: 5%;
+  border: red solid 1px;
+  width: 50px;
+  height: 50px;
+}
+#local-aquarium {
+  position: absolute;
+  top: 220px;
+  left: 183px;
+  border: red solid 1px;
+  width: 50px;
+  height: 50px;
+}
+
+#local-ration {
+  width: 50px;
+  height: 50px;
+}
+
+#ration {
+  width: 2.5rem;
 }
