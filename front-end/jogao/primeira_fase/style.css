@@ -1,0 +1,171 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  overflow-x: hidden;
+
+  background-image: linear-gradient(#a5fee9, #f4eeb5);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {
+  background-color: #0000ffbe;
+  height: 1em;
+  width: 3em;
+  border: solid black 1px;
+}
+#animated-timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#timer {
+  font-size: x-large;
+}
+#t10 {
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+#t1 {
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+}
+
+#primImg {
+  border: 2px solid green;
+  position: relative;
+}
+
+#imgRef {
+  height: 30vh;
+  display: block;
+  max-width: 100vw;
+}
+
+#secImg {
+  position: relative;
+}
+
+#imgRef2 {
+  height: 30vh;
+  display: block;
+  max-width: 100vw;
+}
+
+/* #testBox {
+  position: absolute;
+  top: 64%;
+  left: 28%;
+  border: red solid 1px;
+  width: 10%;
+  height: 10%;
+} */
+
+.local-img {
+  position: absolute;
+  border: red solid 1px;
+  width: 10%;
+  height: 10%;
+}
+
+#local-aquarium {
+  top: 81%;
+  left: 77%;
+  width: 11%;
+  height: 16%;
+}
+#local-ration {
+  top: 65%;
+  left: 30%;
+  width: 9%;
+  height: 24%;
+}
+#local-balls {
+  top: 82%;
+  left: 25%;
+  width: 7%;
+}
+#local-bowl {
+  top: 89%;
+  left: 91%;
+  width: 9%;
+}
+#local-catFood {
+  top: 36%;
+  left: 27%;
+  width: 5%;
+  height: 5%;
+}
+#local-certificate {
+  top: 33%;
+  left: 72%;
+  width: 11%;
+  height: 14%;
+}
+
+/* #secImg {
+  background-image: url(./Assets/petStore/fundos/imgFalse.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 80vw;
+  height: 30vh;
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+} */
+
+.item {
+  margin: 1rem;
+}
+
+#aquarium {
+  width: 72px;
+}
+#ration {
+  width: 56px;
+}
+#balls {
+  width: 35px;
+}
+#bowl {
+  width: 48px;
+}
+#catFood {
+  width: 24px;
+}
+#certificate {
+  width: 72px;
+}
+
+/* #local-ration {
+  position: absolute;
+  top: 90%;
+  left: 5%;
+  border: red solid 1px;
+  width: 50px;
+  height: 50px;
+} */
+/* #local-aquarium {
+  position: absolute;
+  top: 220px;
+  left: 183px;
+  border: red solid 1px;
+  width: 50px;
+  height: 50px;
+} */

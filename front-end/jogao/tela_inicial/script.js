@@ -88,3 +88,8 @@ function dragDrop() {
   this.className = 'dropImg';
   this.append(dragImg);
 }
+
+function entrar_jogo(){
+    window.location = "/front-end/jogao/primeira_fase"
+}
+
