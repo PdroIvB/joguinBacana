@@ -28,30 +28,44 @@
 //     });
 // }
 
-const aquariumPosition = $("#local-aquarium").position();
-const rationPosition = $("#local-ration").position();
-const ballsPosition = $("#local-balls").position();
-const bowlPosition = $("#local-bowl").position();
-const catFoodPosition = $("#local-catFood").position();
-const certificatePosition = $("#local-certificate").position();
+class punctuation {
+  constructor(){
+
+  }
+}
+
 
 $(".item").draggable({
   containment: "body",
+  drop: function(event,ui){}
 });
+
+$('body').droppable({
+  drop: function (event, ui) {
+    const typeObj = ui.draggable.attr("type-obj");
+    $(`#${typeObj}`).css({left:"0",top:"0"});
+  }
+})
+
+let score = 0;
 
 $(".local-img").droppable({
   drop: function (event, ui) {
-    console.log("drop");
+    
     const localImg = $(this).attr("type-obj");
     const typeObj = ui.draggable.attr("type-obj");
-    const position = $(this).position();    
+    
+      
     if (typeObj === localImg) {
       console.log("acertou");
-      $(this).position() = ui.draggable.position()
-      $(`#${localImg}`).css({left:position.left, top:position.top});
-    } else {
-      
-    }
+     
+      $(`#${typeObj}`).css("margin","0");
+      $(this).append($(`#${typeObj}`));
+      score++;
+     
+    } 
+    testScore(score);
+
 
     //$("#score").html(score);
     ui.draggable.attr("inside", 1);
@@ -63,9 +77,18 @@ $(".local-img").droppable({
     }
   },
   out: function (event, ui) {
+    console.log("teste")
     //ui.draggable.attr("inside",0)
   },
 });
+
+function testScore(_score){
+  const score = _score;
+  if(score >= 6 ){
+    window.location = "/front-end/jogao/tela_inicial/index.html"
+
+}
+}
 
 function startTimer(duration, display) {
   let timer = duration;
@@ -82,7 +105,7 @@ function startTimer(duration, display) {
   }, 1000);
 }
 function animatedTimer(timer, duration) {
-  console.log(timer);
+  //console.log(timer);
   if (timer == duration - (duration / 10) * 1) {
     document
       .getElementById("t10")

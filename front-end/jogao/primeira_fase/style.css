@@ -6,7 +6,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
 
-  background-image: url('/front-end/jogao/Assets/primeira_fase/background.png');
+  background-image: url('/front-end/jogao/Assets/primeira_fase/blue-cartoon-background.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -14,10 +14,16 @@ body {
   margin: 0;
 }
 
-#drag-img {  
- 
-  background: #167737;
-  border: solid #896217 5px;
+#drag-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #1677;
+  border: solid #8962 5px;
+  border-radius: 15px;
+  width: 442px;
+  height: 100px;
 }
 
 .container {
@@ -54,7 +60,7 @@ body {
 }
 
 #primImg {
-  border: 5px solid white;
+  border: solid #8962 5px;
   position: relative;
 }
 
@@ -66,7 +72,7 @@ body {
 
 #secImg {
   position: relative;
-  border: 5px solid white;
+  border: solid #8962 5px;
 }
 
 #imgRef2 {
@@ -86,7 +92,7 @@ body {
 
 .local-img {
   position: absolute;
-  border: red solid 1px;
+  /* border: red solid 1px; */
   width: 10%;
   height: 10%;
 }
@@ -106,18 +112,18 @@ body {
 #local-balls {
   top: 82%;
   left: 25%;
-  width: 7%;
+  width: 6%;
 }
 #local-bowl {
   top: 89%;
   left: 91%;
-  width: 9%;
+  width: 7%;
 }
 #local-catFood {
-  top: 36%;
+  top: 34%;
   left: 27%;
-  width: 5%;
-  height: 5%;
+  width: 4%;
+  height: 4%;
 }
 #local-certificate {
   top: 33%;
@@ -145,22 +151,28 @@ body {
 }
 
 #aquarium {
-  width: 72px;
+  width: 51px;
 }
 #ration {
-  width: 56px;
+  width: 42px; 
 }
 #balls {
-  width: 35px;
+  width: 25px;
 }
 #bowl {
-  width: 48px;
+  width: 32px;
 }
 #catFood {
-  width: 24px;
+  width: 18px;
 }
 #certificate {
-  width: 72px;
+  width: 51px;
+}
+
+.ordem{
+  display: flex;
+  flex-direction: row;
+
 }
 
 /* #local-ration {
