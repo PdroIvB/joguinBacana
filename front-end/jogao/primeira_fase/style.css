@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
 @font-face {
   font-family: 'Bocah';
@@ -7,20 +13,18 @@
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100vw;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   background-image: url('/front-end/jogao/Assets/primeira_fase/blue-cartoon-background.png');
-  background-image: linear-gradient(#a5fee9, #f4eeb5);
+  background-image: linear-gradient(#fea5cf, #f4eeb5);
   /* background-image: url('/front-end/jogao/Assets/primeira_fase/blue-cartoon-background.png'); */
   background-image: url('https://img.freepik.com/vetores-gratis/criancas-jogando-jogo-de-tabuleiro-em-casa_1308-94835.jpg?t=st=1648165554~exp=1648166154~hmac=e9ab5b310027dab9f8213621a261ce916a1ae0b2a24028dc3f418bfa2b56c1bb&w=740');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  margin: 0;
+  align-items: center;
 }
 
 #drag-img {
@@ -89,15 +93,6 @@ body {
   display: block;
   max-width: 100vw;
 }
-
-/* #testBox {
-  position: absolute;
-  top: 64%;
-  left: 28%;
-  border: red solid 1px;
-  width: 10%;
-  height: 10%;
-} */
 
 .local-img {
   position: absolute;
@@ -171,7 +166,7 @@ h2 {
 .ordem{
   display: flex;
   flex-direction: row;
-  width: 51px;
+ 
 }
 
 .ordem {
