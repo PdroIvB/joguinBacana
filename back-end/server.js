@@ -13,6 +13,21 @@ app.get("/helloworld", (req, res) => {
   res.send({ message: "Hello World!" });
 });
 
+app.get("/ranking", (req, res) => {
+  const ranking = JSON.parse(fs.readFileSync("./ranking.json", "utf8"));
+  ranking.sort(function (a, b) {
+    if (a.points > b.points) {
+      return 1;
+    }
+    if (a.points < b.points) {
+      return -1;
+    }
+    return 0;
+  });
+  ranking.slice(0,9)
+  res.send({data: ranking});
+});
+
 app.post("/save-score", (req, res) => {
   const data = req.body.data;
   console.log(data);

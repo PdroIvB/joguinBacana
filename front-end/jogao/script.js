@@ -1,7 +1,11 @@
 $("#botao").click(helloWorld);
 $("#botao1").click(bla);
 
+<<<<<<< Updated upstream:front-end/jogao/script.js
 function helloWorld() {
+=======
+function ranking() {
+>>>>>>> Stashed changes:front-end/jogao/primeira_fase/script.js
   fetch("http://localhost:3000/helloworld")
     .then(function (response) {
       return response.json();
@@ -9,6 +13,7 @@ function helloWorld() {
     .then(function (response) {
       alert(response.message);
     });
+<<<<<<< Updated upstream:front-end/jogao/script.js
 }
 
 function bla() {
@@ -26,6 +31,87 @@ function bla() {
     .then(function (response) {
       alert(response.status);
     });
+=======
+}
+
+function savePoints() {
+  console.log("ok");
+  const name = document.getElementById("player-name").value;
+  const points = document.getElementById("points").innerHTML;
+  const objASerStrigifado = { data: { name: name, points: points } };
+  const objetoNovo = {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(objASerStrigifado),
+  };
+  fetch("http://localhost:3000/save-score", objetoNovo)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (response) {
+      alert(response.status); 
+      //FIXME redirecionar jogador para tela inicial, fazer uma confirmação se a pontuação foi salva
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
+}
+
+// class punctuation {
+//   constructor(){
+
+//   }
+// }
+
+$(".item").draggable({
+  containment: "body",
+  drop: function (event, ui) {},
+});
+
+$("body").droppable({
+  drop: function (event, ui) {
+    const typeObj = ui.draggable.attr("type-obj");
+    $(`#${typeObj}`).css({ left: "0", top: "0" });
+  },
+});
+
+let score = 0;
+
+$(".local-img").droppable({
+  drop: function (event, ui) {
+    const localImg = $(this).attr("type-obj");
+    const typeObj = ui.draggable.attr("type-obj");
+
+    if (typeObj === localImg) {
+      console.log("acertou");
+
+      $(`#${typeObj}`).css("margin", "0");
+      $(this).append($(`#${typeObj}`));
+      score++;
+    }
+    testScore(score);
+
+    //$("#score").html(score);
+    ui.draggable.attr("inside", 1);
+  },
+  over: function (event, ui) {
+    if (Number(ui.draggable.attr("inside"))) {
+      //score -= Number(ui.draggable.attr("value"));
+      //$("#score").html(score);
+    }
+  },
+  out: function (event, ui) {
+    console.log("teste");
+    //ui.draggable.attr("inside",0)
+  },
+});
+
+function testScore(_score) {
+  const score = _score;
+  if (score >= 6) {
+    window.location = "/front-end/jogao/tela_inicial/index.html";
+  }
+>>>>>>> Stashed changes:front-end/jogao/primeira_fase/script.js
 }
 
 function startTimer(duration, display) {
