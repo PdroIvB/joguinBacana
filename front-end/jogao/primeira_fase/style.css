@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+@font-face {
+  font-family: 'Bocah';
+  src: url(bocah_2/Bocah.otf)  
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -5,8 +11,11 @@ body {
   justify-content: center;
   width: 100vw;
   overflow-x: hidden;
-
+  font-family: 'Poppins', sans-serif;
   background-image: url('/front-end/jogao/Assets/primeira_fase/blue-cartoon-background.png');
+  background-image: linear-gradient(#a5fee9, #f4eeb5);
+  /* background-image: url('/front-end/jogao/Assets/primeira_fase/blue-cartoon-background.png'); */
+  background-image: url('https://img.freepik.com/vetores-gratis/criancas-jogando-jogo-de-tabuleiro-em-casa_1308-94835.jpg?t=st=1648165554~exp=1648166154~hmac=e9ab5b310027dab9f8213621a261ce916a1ae0b2a24028dc3f418bfa2b56c1bb&w=740');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -132,29 +141,19 @@ body {
   height: 14%;
 }
 
-/* #secImg {
-  background-image: url(./Assets/petStore/fundos/imgFalse.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 80vw;
-  height: 30vh;
-  border: 3px solid red;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-} */
-
 .item {
   margin: 1rem;
 }
-
+h2 {
+  font-family: 'Bocah';
+  font-size: 2.5rem;
+}
 #aquarium {
   width: 51px;
 }
 #ration {
-  width: 42px; 
+  width: 42px;
+
 }
 #balls {
   width: 25px;
@@ -172,22 +171,25 @@ body {
 .ordem{
   display: flex;
   flex-direction: row;
-
+  width: 51px;
 }
 
-/* #local-ration {
-  position: absolute;
-  top: 90%;
-  left: 5%;
-  border: red solid 1px;
-  width: 50px;
-  height: 50px;
-} */
-/* #local-aquarium {
-  position: absolute;
-  top: 220px;
-  left: 183px;
-  border: red solid 1px;
-  width: 50px;
-  height: 50px;
-} */
+.ordem {
+  display: flex;
+  flex-direction: row;
+}
+#btn-voltar {
+  width:185px;
+  height:45px;
+  background-color: #89C1FE;
+  border-radius: 20px; 
+  font-size: 25px;
+  margin-top: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+#btn-voltar:hover {
+  background-color: red;
+}
+

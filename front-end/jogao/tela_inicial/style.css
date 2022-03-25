@@ -1,49 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
 @font-face {
     font-family: 'Bocah';
     src: url('bocah_2/Bocah.otf') format('opentype'), url('bocah_2/Bocah.ttf') format('truetype');
   }
 
 body {
-    background-image: url(/front-end/jogao/Assets/tela_inicial/tela_inicial.png.png);
+    /* background-image: url(/front-end/jogao/Assets/tela_inicial/tela_inicial.png.png); */
+    background-image: url(tela_inicial.png.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 100vh;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .btn-1{
     
-    width:185px;
+    width:190px;
     height:45px;
     background-color: #89C1FE;
     border-radius: 20px; 
     font-size: 25px;
     margin-top: 10%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+
 } 
 
 .btn-2 {
-    width:185px;
+    width:190px;
     height:45px;
     background-color: #89C1FE;
     border-radius: 20px;
     font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-
 .btn-3 {
-    width:185px;
+    width:190px;
     height:45px;
     background-color: #89C1FE;
     border-radius: 20px; 
     font-size: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+
+}
+.btn-1:hover, .btn-2:hover, .btn-3:hover {
+    background-color: red;
 }
 
-
-#img_start{
+#img_start {
     width: 100%;
     height: 100%;
     display: flex;
@@ -86,9 +97,15 @@ body {
     border-bottom-left-radius: 2em;
 }
 
+<<<<<<< Updated upstream
 #primImg{
     /* border: 2px solid green; */
 }
+=======
+/* #primImg{
+    /* border: 2px solid green; 
+}*/
+>>>>>>> Stashed changes
 
 #imgRef{
     height: 30vh;
