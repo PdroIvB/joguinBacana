@@ -100,6 +100,7 @@ function startTimer(duration, display) {
     display.innerHTML = `${minutes}:${seconds}`;
     if (--timer < 0) {
       clearInterval(interval);
+      window.location = "/tela_inicial"
     }
     animatedTimer(timer, duration);
   }, 1000);
