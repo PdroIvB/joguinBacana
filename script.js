@@ -42,4 +42,65 @@ window.onload = function () {
     const duration = 60 * 2; 
     display = document.getElementById('timer');
     startTimer(duration, display); 
+<<<<<<< Updated upstream:script.js
 };
+=======
+};
+
+const dragImg = document.querySelector('.dragImg');
+const imgDrop = document.querySelectorAll('.dropImg');
+
+// dragImg listeners
+dragImg.addEventListener('dragstart', dragStart);
+dragImg.addEventListener('dragend', dragEnd);
+
+// Loop through dropImg boxes and add listeners
+for (const dropImg of imgDrop) {
+  dropImg.addEventListener('dragover', dragOver);
+  dropImg.addEventListener('dragenter', dragEnter);
+  dropImg.addEventListener('dragleave', dragLeave);
+  dropImg.addEventListener('drop', dragDrop);
+}
+
+// Drag Functions
+
+function dragStart() {
+  this.className += ' hold';
+  setTimeout(() => (this.className = 'invisible'), 0);
+}
+
+function dragEnd() {
+  this.className = 'dragImg';
+  console.log("acertou")
+}
+
+function dragOver(e) {
+  e.preventDefault();
+}
+
+function dragEnter(e) {
+  e.preventDefault();
+//   this.className += ' hovered';
+}
+
+function dragLeave() {
+  this.className = 'dropImg';
+}
+
+function dragDrop() {
+  this.className = 'dropImg';
+  this.append(dragImg);
+}
+
+function entrar_jogo(){
+    window.location = "/front-end/jogao/primeira_fase/"
+}
+
+function entrar_instrucao(){
+    window.location = "/front-end/jogao/tela_instrucao"
+}
+
+function voltar_tela_jogo(){
+    window.location = "/front-end/jogao/tela_ranking"
+}
+>>>>>>> Stashed changes:front-end/jogao/tela_inicial/script.js
