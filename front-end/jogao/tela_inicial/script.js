@@ -4,3 +4,10 @@ function entrar_jogo(){
    return true
 }
 
+function entrar_instrucao(){
+    window.location = "/front-end/jogao/tela_instrucao"
+}
+
+function voltar_tela_jogo(){
+    window.location = "/front-end/jogao/tela_ranking"
+}

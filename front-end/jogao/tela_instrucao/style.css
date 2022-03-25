@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+}
+
+
+body {
+    background-image: url(/front-end/jogao/Assets/tela_instrucao/tela_instrucao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #img_start{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+}
+  .btn-1{    
+    width:185px;
+    height:45px;
+    background-color: red;
+    border-radius: 30px;
+    font-size: 25px;
+    margin-top: 25%; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white
+} 
