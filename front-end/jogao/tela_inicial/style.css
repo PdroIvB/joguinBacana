@@ -5,8 +5,7 @@
   }
 
 body {
-    /* background-image: url(/front-end/jogao/Assets/tela_inicial/tela_inicial.png.png); */
-    background-image: url(tela_inicial.png.png);
+    background-image: url(../Assets/tela_inicial/tela_inicial.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -97,15 +96,9 @@ body {
     border-bottom-left-radius: 2em;
 }
 
-<<<<<<< Updated upstream
 #primImg{
     /* border: 2px solid green; */
 }
-=======
-/* #primImg{
-    /* border: 2px solid green; 
-}*/
->>>>>>> Stashed changes
 
 #imgRef{
     height: 30vh;

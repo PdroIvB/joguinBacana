@@ -4,7 +4,7 @@
 
 
 body {
-    background-image: url(/front-end/jogao/Assets/tela_instrucao/tela_instrucao.png);
+    background-image: url(../Assets/tela_instrucao/tela_instrucao.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
