@@ -4,7 +4,7 @@
 
 
 body {
-    background-image: url(/front-end/jogao/Assets/tela_ranking/tela_ranking.png);
+    background-image: url(../Assets/tela_ranking/tela_ranking.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;

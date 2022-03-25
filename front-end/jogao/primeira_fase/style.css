@@ -16,7 +16,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
-  background-image: url('/front-end/jogao/Assets/primeira_fase/blue-cartoon-background.png');
+  background-image: url("../Assets/primeira_fase/blue-cartoon-background.png");
   background-image: linear-gradient(#fea5cf, #f4eeb5);
   /* background-image: url('/front-end/jogao/Assets/primeira_fase/blue-cartoon-background.png'); */
   background-image: url('https://img.freepik.com/vetores-gratis/criancas-jogando-jogo-de-tabuleiro-em-casa_1308-94835.jpg?t=st=1648165554~exp=1648166154~hmac=e9ab5b310027dab9f8213621a261ce916a1ae0b2a24028dc3f418bfa2b56c1bb&w=740');

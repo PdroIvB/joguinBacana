@@ -1,13 +1,11 @@
 function entrar_jogo(){
-    window.location = "/front-end/jogao/primeira_fase/index.html"
-  
-   return true
+    window.location = "/primeira_fase"
 }
 
 function entrar_instrucao(){
-    window.location = "/front-end/jogao/tela_instrucao"
+    window.location = "/tela_instrucao"
 }
 
 function voltar_tela_jogo(){
-    window.location = "/front-end/jogao/tela_ranking"
+    window.location = "/tela_ranking"
 }

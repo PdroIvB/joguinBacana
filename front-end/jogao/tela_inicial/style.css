@@ -105,7 +105,7 @@ body {
 }
 
 #secImg{
-    background-image: url(./Assets/images/imgFalse.png);
+    background-image: url(../Assets/images/imgFalse.png);
     background-repeat: no-repeat;
     background-size:contain;
     background-position: center;
