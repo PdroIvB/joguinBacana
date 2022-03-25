@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+@font-face {
+  font-family: 'Bocah';
+  src: url(bocah_2/Bocah.otf)  
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -5,8 +11,14 @@ body {
   justify-content: center;
   width: 100vw;
   overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 
+<<<<<<< Updated upstream
   background-image: linear-gradient(#a5fee9, #f4eeb5);
+=======
+  /* background-image: url('/front-end/jogao/Assets/primeira_fase/blue-cartoon-background.png'); */
+  background-image: url('https://img.freepik.com/vetores-gratis/criancas-jogando-jogo-de-tabuleiro-em-casa_1308-94835.jpg?t=st=1648165554~exp=1648166154~hmac=e9ab5b310027dab9f8213621a261ce916a1ae0b2a24028dc3f418bfa2b56c1bb&w=740');
+>>>>>>> Stashed changes
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -133,12 +145,19 @@ body {
 .item {
   margin: 1rem;
 }
-
+h2 {
+  font-family: 'Bocah';
+  font-size: 2.5rem;
+}
 #aquarium {
   width: 72px;
 }
 #ration {
+<<<<<<< Updated upstream
   width: 56px;
+=======
+  width: 42px;
+>>>>>>> Stashed changes
 }
 #balls {
   width: 35px;
@@ -150,7 +169,31 @@ body {
   width: 24px;
 }
 #certificate {
+<<<<<<< Updated upstream
   width: 72px;
+=======
+  width: 51px;
+}
+
+.ordem {
+  display: flex;
+  flex-direction: row;
+}
+#btn-voltar {
+  width:185px;
+  height:45px;
+  background-color: #89C1FE;
+  border-radius: 20px; 
+  font-size: 25px;
+  margin-top: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+#btn-voltar:hover {
+  background-color: red;
+
+>>>>>>> Stashed changes
 }
 
 /* #local-ration {
