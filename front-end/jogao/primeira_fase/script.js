@@ -153,3 +153,7 @@ window.onload = function () {
   display = document.getElementById("timer");
   startTimer(duration, display);
 };
+
+function voltar_jogo(){
+  window.location = "/tela_inicial"
+}
