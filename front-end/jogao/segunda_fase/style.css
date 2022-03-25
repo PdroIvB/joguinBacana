@@ -11,7 +11,7 @@ body {
     width: 100vw;
     overflow-x: hidden;
   
-    background-image: url('/front-end/jogao/Assets/primeira_fase/blue-cartoon-background.png');
+    background-image: url('../Assets/primeira_fase/blue-cartoon-background.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;

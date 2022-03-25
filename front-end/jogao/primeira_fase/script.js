@@ -85,7 +85,7 @@ $(".local-img").droppable({
 function testScore(_score){
   const score = _score;
   if(score >= 6 ){
-    window.location = "/front-end/jogao/tela_inicial/index.html"
+    window.location = "/tela_inicial"
 
 }
 }
