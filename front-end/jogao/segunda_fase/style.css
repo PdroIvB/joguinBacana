@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    overflow-x: hidden;
+  
+    background-image: url('/front-end/jogao/Assets/primeira_fase/blue-cartoon-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+  
+#drag-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #1677;
+    border: solid #8962 5px;
+    border-radius: 15px;
+    width: 442px;
+    height: 100px;
+}
+  
+.container {
+    /* border: 5px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.time {
+    background-color: #0000ffbe;
+    height: 1em;
+    width: 3em;
+    /* border: solid black 1px; */
+}
+
+#animated-timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#timer {
+    font-size: x-large;
+}
+
+#t10 {
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+#t1 {
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+  
+#primImg {
+    border: solid #8962 5px;
+    position: relative;
+}
+  
+#imgRef {
+    height: 45vh;
+    display: block;
+    max-width: 100vw;
+}
+  
+#secImg {
+    position: relative;
+    border: solid #8962 5px;
+}
+  
+#imgRef2 {
+    height: 45vh;
+    display: block;
+    max-width: 100vw;
+}
+  
+.local-img {
+    position: absolute;
+    border: red solid 3px;
+    width: 10%;
+    height: 10%;
+}
+  
+#local-yellow {
+    top: 15%;
+    left: 76%;
+    width: 9%;
+    height: 12%;
+}
+
+#local-dog {
+    top: 46%;
+    left: 46.69%;
+    width: 7%;
+    height: 15%;
+}
+
+#local-fish {
+    top: 92%;
+    left: 37%;
+    width: 7%;
+    height: 5%;
+}
+
+#local-red {
+    top: 51%;
+    left: 81%;
+    width: 3%;
+    height: 4%
+}
+
+#local-wheel {
+    top: 27%;
+    left: 15.9%;
+    width: 7%;
+    height: 9%;
+}
+
+#local-ball-pink {
+    top: 55%;
+    left: 61%;
+    width: 2%;
+    height: 2%;
+}
+
+.item {
+    margin: 1rem;
+}
+  
+#fish {
+    width: 32px;
+}
+
+#ball-pink {
+    width: 6.5px; 
+}
+
+#dog {
+    width: 36px;
+}
+
+#red {
+    width: 19px;
+}
+
+#yellow {
+    width: 48px;
+}
+
+#wheel {
+    width: 34px;
+}
+  
+.ordem{
+    display: flex;
+    flex-direction: row;
+}
+  
